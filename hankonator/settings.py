@@ -25,7 +25,7 @@ SECRET_KEY = 'v047ttgi!ljj2e*1wc)0a0+1319_f=^jm)=448we7c8cppr8u$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['hankonator.herokuapp.com']
 
 
 # Application definition
