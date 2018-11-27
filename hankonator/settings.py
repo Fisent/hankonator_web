@@ -25,7 +25,7 @@ SECRET_KEY = 'v047ttgi!ljj2e*1wc)0a0+1319_f=^jm)=448we7c8cppr8u$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['hankonator.herokuapp.com']
+ALLOWED_HOSTS = ['hankonator.herokuapp.com', '127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -37,6 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'hankonator',
+    'orquestra',
+    'jfu',
+    'sorl.thumbnail',
 ]
 
 MIDDLEWARE = [
@@ -47,6 +51,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'pyforms_web.web.middleware.PyFormsMiddleware'
 ]
 
 ROOT_URLCONF = 'hankonator.urls'
